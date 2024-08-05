@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+
+<body>
+  <form action="/generate_segitiga" method="POST">
+    <input type="number" placeholder="Input Angka" id="number" name="number" required />
+    <button type="submit">Generate Segitiga</button>
+  </form>
+
+  <form action="/generate_ganjil" method="POST">
+    <input type="number" placeholder="Input Angka" id="number" name="number" required />
+    <button type="submit">Generate Bilangan Ganjil</button>
+  </form>
+
+  <form action="/generate_ganjil" method="POST">
+    <input type="number" placeholder="Input Angka" id="number" name="number" required />
+    <button type="submit">Generate Bilangan Prima</button>
+  </form>
+
+
+  <h2>Result:</h2>
+  {% for i in result %} {{ i }} <br />
+  {% endfor %}
+</body>
+
+</html>
